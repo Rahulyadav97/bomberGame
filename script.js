@@ -18,7 +18,7 @@ row.style.width = "200px;"
       cell.style.height = "30px";
       cell.style.width = "30px";
       cell.style.backgroundColor = "grey";
-      cell.style.border="1px outset lightgrey"
+      cell.style.border="1px ridge lightgrey"
       cell.innerHTML = " ";
       cell.style.display="inline-block";
       cell.setAttribute("id",currentIndex);
@@ -32,7 +32,7 @@ row.style.width = "200px;"
               {
 let  bomb = bomberindexes[d];
 let bombNode = document.getElementById(bomb);
-bombNode.style.backgroundColor="red";
+bombNode.style.backgroundColor="#ff1a1a";
 //console.log(bomb);
 
 startGame.style.display = "block";
@@ -46,10 +46,10 @@ startGame.addEventListener("click",()=>{
 
           }
           else if(gameOver!=true){
-              if(cell.style.backgroundColor!="green"){
+              if(cell.style.backgroundColor!="#47d147"){
               score++;
               points.innerHTML=score;
-            cell.style.backgroundColor="green"
+            cell.style.backgroundColor="#47d147"
               }
           }
          
