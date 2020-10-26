@@ -80,3 +80,4 @@ function generateRandomNum(bomberIndexes)
     return bomberIndexes;
 }
 }
+startGame();
