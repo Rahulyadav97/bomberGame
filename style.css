@@ -1,0 +1,9 @@
+#root{
+    width: 80%;
+    position: relative;
+    border-radius: 2px ;
+    border: 1px solid powderblue;
+}
+#start{
+    display: none;
+}
