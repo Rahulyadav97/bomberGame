@@ -9,16 +9,16 @@ let score = 0;
 for(let i=0;i<9;i++)
 {
    let row = document.createElement('div');
-row.style.height = "20px";
+row.style.height = "30px";
 row.style.width = "200px;"
     for(let x=0;x<9;x++)
     {
     let currentIndex = i*9+x;
       let cell = document.createElement('div');
-      cell.style.height = "20px";
-      cell.style.width = "20px";
+      cell.style.height = "30px";
+      cell.style.width = "30px";
       cell.style.backgroundColor = "grey";
-      cell.style.border="1px solid black"
+      cell.style.border="1px outset lightgrey"
       cell.innerHTML = " ";
       cell.style.display="inline-block";
       cell.setAttribute("id",currentIndex);
