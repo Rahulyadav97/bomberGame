@@ -1,9 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+body{
+    background-color: antiquewhite;
+}
 #root{
-    width: 80%;
     position: relative;
+    padding: 60px;
     border-radius: 2px ;
     border: 1px solid powderblue;
 }
 #start{
     display: none;
 }
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  #points{
+      color: darkred;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .text-center{
+    text-align: center;
+  }

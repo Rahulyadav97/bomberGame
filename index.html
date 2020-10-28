@@ -5,11 +5,22 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="root">
+        <div class="row">
+            <div class="column">
+                <h2>Minesweeper - Bomber Man</h2>
+                <p>10 Bombs are Hidden inside the grid open tiles which  does not have bomb inside. Each non-bomb tile gives one score try to scrore higher without touching any bomb .touching any bomb tile will end the game </p>
+              </div>
+        <div class="column" id="root">
             
         </div>
-        <div id="points"></div>
-        <button id="start">Start New Game</button>
+        <div class="column center" ><h1>Score:<span  id="points"></span></h1>
+        </div>
+        </div>
+       
+        
+        <div class="center">
+            <button id="start">Start New Game</button>
+          </div>
         <script src="script.js"></script>
         </body>
 </html>
