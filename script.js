@@ -3,7 +3,7 @@ let root = document.getElementById('root');
 let points = document.getElementById('points');
 let startGame= document.getElementById('start');
 let bomberindexes = generateRandomNum( []);
-//console.log("her",bomberindexes);
+console.log("here",bomberindexes);
 let gameOver = false;
 let score = 0;
 for(let i=0;i<9;i++)
@@ -62,7 +62,7 @@ startGame.addEventListener("click",()=>{
 function generateRandomNum(bomberIndexes)
 {
     let randomNumber = Math.ceil(Math.random()*81);
-    //console.log(randomNumber);
+   
     if(bomberIndexes.length===10)
     {
         return bomberIndexes;
@@ -76,7 +76,7 @@ function generateRandomNum(bomberIndexes)
         generateRandomNum(bomberIndexes);
     }
     
-    //console.log(bomberIndexes);
+    console.log(bomberIndexes);
     return bomberIndexes;
 }
 }
